@@ -2,7 +2,13 @@
 
 ## 0. Get the code for the workshop
 
-In your terminal program - powershell, MacOS Terminal, etc. clone the code:
+There are two ways to do this - you can go here:
+
+https://github.com/yeeking/multi-agent-workshop
+
+Click the green 'code' button and select 'download zip'.
+
+Or if you have git installed, you can rnu this command in your terminal:
 
 ```
 git clone https://github.com/yeeking/multi-agent-workshop.git
@@ -28,7 +34,7 @@ Go to the developer icon in LM Studio. Select the gemma model and start up the s
 
 It should display a message saying 'Status: running' next to the server on/ off toggle button. 
 
-### Test it with your web browser
+### Test the API server with your web browser
 
 Point your web browser here: http://127.0.0.1:1234/v1/models
 
@@ -38,6 +44,17 @@ You should see some JSON data displayed which describes a list of models.
 
 Now we have our language model server up and running, we are going to try to communicate with it from Python. We will not do this at a low level - instead we will use the Pydantic-AI Python library. 
 
+### Install vscodium
+
+If you do not have VSCode or VSCodium installed, please install it now. 
+
+We recommend VSCodium as it has stronger privacy features. Go here and download for your operating system: 
+
+https://vscodium.com/
+
+Launch VSCodium once installed and select 'Open folder' from the file menu. 
+
+Select the folder where you downloaded the multi-agent github codebase. 
 
 ### Install Pydantic AI
 
