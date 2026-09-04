@@ -6,7 +6,7 @@ There are two ways to do this - you can go here:
 
 https://github.com/yeeking/multi-agent-workshop
 
-Click the green 'code' button and select 'download zip'.
+Click the green 'code' button and select 'download zip'. Unzip the zip somewhere on your filesystem. 
 
 Or if you have git installed, you can rnu this command in your terminal:
 
@@ -14,17 +14,27 @@ Or if you have git installed, you can rnu this command in your terminal:
 git clone https://github.com/yeeking/multi-agent-workshop.git
 ```
 
+### £nd of stage check-in
+
+At this point, you should have the zip file downloaded, or the git repo cloned. You should see a folder on your computer entitled 'multi-agent-workshop'. 
+
 ## 1. Set up LM Studio
 
 ### Install LM Studio
 
-Visit here and download LM studio: https://lmstudio.ai/
+Visit here and download LM studio: https://lmstudio.ai/download
+
+You *do not* need 'Bionic' you need 'LM Studio'. 
 
 ### Download the Gemma model
 
-Launch LM Studio and on the left panel click the model search function. Search for 'google/gemma-4-e4b' - it is quite small and capable. 
+Launch LM Studio and on the left panel click the model search function. Search for 'google/gemma-4-e4b' - it is quite small and capable. Or if you are on a memory limited system (e.g. an 8GB Mac) or you want a faster download, you should look for 'https://lmstudio.ai/models/google/gemma-4-e2b' which is smaller but still useful. 
 
-Once the download completes, go into the chat section in LM Studio, start a new chat and load the google/gemma-4-e4b model. Try some queries to verify the model is working correctly. 
+Once the download completes, go into the chat section in LM Studio, start a new chat and load the google/gemma-4-e4b model. Try typing in some questions  to verify the model is working correctly. 
+
+### About speed
+
+The chat interface of LM-Studio should display some statistics about the performance of the model on your system. On my regular laptop it says I am achieved 18 tokens per second. That means it generates about 18 'words' or 'word fragments' per second. But you will see that it spends some of the 'tokens' thinking, before giving you the final output. How many tokens per second do you see on your system? 
 
 ### Start the API server
 
@@ -39,6 +49,18 @@ It should display a message saying 'Status: running' next to the server on/ off 
 Point your web browser here: http://127.0.0.1:1234/v1/models
 
 You should see some JSON data displayed which describes a list of models. 
+
+### End of stage check
+
+Check you have done the following before proceeding:
+
+* Have VSCodium or VSCode installed and running
+* opened the repo folder in the code editor
+* installed LM-Studio 
+* installed a Gemma model
+* chatted to Gemma in LM-Studio
+* started the LM-Studio API server
+* tested the API server in your web browser
 
 ## 2. Create a minimal Pydantic AI agent
 
