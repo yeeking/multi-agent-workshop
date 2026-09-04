@@ -193,6 +193,14 @@ You should see a web interface wherein you can talk to your agent.
 
 Try some prompts. Congratulations - you now have your own private large language model. 
 
+### End of stage check-in
+
+* Made and activated a virtual env
+* Installed pydantic and other packages
+* Run an example 
+* Interacted with an agent in the CLI
+* Interacted with an agent in your web browser
+
 ## 3. Add some tools
 
 ### Give it calculation capabilities
@@ -313,6 +321,12 @@ If you read through those logs you can see that the pydantic AI library is addin
 
 Can you identify how the agent sends the request for tool calls back? 
 
+### End of stage check-in
+
+* Added an 'addition' tool to the agent
+* Created your own tool and added it to the agent
+* Investigated how tool-calling works 
+
 ## 4. Add some agent capabilities
 
 As well as custom tools, Pydantic-AI provides some useful capabilities. We could implement these ourselves, but why not use the built-in ones?
@@ -372,6 +386,11 @@ agent = Agent(
 ```
 
 You should be able to continue chatting away now! 
+
+### End of stage check-in
+
+* Added an internet search capability to an agent
+* Added context summarisation capability  to an agent 
 
 ## 5. Multi-agent system
 
@@ -463,3 +482,8 @@ fashion_agent = Agent(
 Now try out some questions! 
 
 Can you think of any other kind of agents that you might want to use? Or a more interested scenario? Experiment with teams of agents with different tools and capabilities. 
+
+### End of stage check-in
+
+* Made an agent team (multi-agent system)
+* Used the team to make fashion suggestions based on the weather 
