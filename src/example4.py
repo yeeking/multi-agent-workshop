@@ -37,6 +37,7 @@ def add_values(x: float, y: float) -> float:
 
 @agent.tool_plain
 def what_time_is_it() -> str:
+    print(f"Agent is looking at its watch...")
     return datetime.now().strftime("%H:%M:%S")
 
 

@@ -43,12 +43,13 @@ Now we have our language model server up and running, we are going to try to com
 
 Earlier, you cloned the multi-agent-workshop repo. Open up VSCODIUM or VSCODE and point it at the repo folder. 
 
-In the code editor terminal, browse to the repo folder. There should be a requirements.txt file in there. Let's create a virtualenv:
+In the code editor terminal, browse to the repo folder. Run these commands to create a virtual environment and to install the necessary python packages there. 
 
 ```
 python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt 
+pip install pydantic-ai duckdb summarization-pydantic-ai "pydantic-ai-slim[duckduckgo]"
+
 ```
 
 ### Create a minimal agent

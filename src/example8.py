@@ -17,7 +17,7 @@ from pydantic_ai.capabilities import WebSearch
 llm_provider = OpenAIChatModel(
     'google/gemma-4-e4b', 
     provider=OpenAIProvider(
-        base_url='http://127.0.0.1:1234/v1',         
+        base_url='http://127.0.0.1:2224/v1',         
         api_key='test'
     ),
 )
